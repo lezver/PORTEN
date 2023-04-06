@@ -1,0 +1,11 @@
+// ...................HERO.............
+@include breakpoint(tab) {
+	.hero {
+		padding: 100px 0;
+	}
+	.hero__text-info {
+		margin: 0 50px;
+		height: 95px;
+		overflow: auto;
+	}
+}

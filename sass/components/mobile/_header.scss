@@ -1,0 +1,32 @@
+//  MOBILE
+// .....................HEADER...............
+// ....................CONTACTS..............
+
+@include breakpoint(mob) {
+	.contacts__log-in {
+		gap: 5px;
+	}
+}
+
+// .....................NAV..................
+
+@include breakpoint(mob) {
+	.nav__items {
+		flex-direction: column;
+	}
+	.nav__box {
+		gap: 10px;
+	}
+	.nav__link {
+		text-align: center;
+	}
+	.nav__link-cart {
+		margin-left: 0;
+	}
+	.nav__btn {
+		svg {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}

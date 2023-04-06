@@ -1,0 +1,119 @@
+//.................SECOND................
+.second {
+	background-color: $black;
+	display: flex;
+}
+// ................SEASON..................
+.season {
+	flex-basis: 54%;
+	padding: 90px 0;
+	font-family: "Playfair Display", serif;
+}
+.season__titel {
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.33;
+	font-size: 36px;
+	&:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background-color: $white;
+		margin: 40px auto 50px;
+	}
+}
+.season__items {
+	@extend %list-style;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	padding: 0 15px;
+}
+.season__link {
+	@extend %link;
+	color: inherit;
+
+	& > picture {
+		display: block;
+		margin-bottom: 25px;
+		transform: scale(1);
+		transition: transform $time $time-distribution;
+	}
+	& > p {
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 1.33;
+		transition: color $time $time-distribution;
+	}
+	& > span {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.33;
+		transition: color $time $time-distribution;
+	}
+	&:hover {
+		& > picture {
+			transform: scale(1.05);
+		}
+		& > p {
+			color: $gray;
+		}
+		& > span {
+			color: $gray;
+		}
+	}
+}
+// ..............NEW-COLLECTION.............
+.new-collection {
+	flex-basis: 46%;
+	width: 100%;
+	background: linear-gradient(
+			rgba(15, 15, 15, 0.5019607843),
+			rgba(15, 15, 15, 0.5019607843)
+		),
+		url("../images/new-collection/new-collection.jpg") no-repeat center/cover;
+
+	@include min-device-pixel() {
+		background: linear-gradient(
+				rgba(15, 15, 15, 0.5019607843),
+				rgba(15, 15, 15, 0.5019607843)
+			),
+			url("../images/new-collection/new-collection@2x.jpg") no-repeat
+				center/cover;
+	}
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-transform: uppercase;
+	align-items: center;
+}
+.new-collection__titel {
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	line-height: 1.33;
+	&:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background-color: $white;
+		margin: 20px auto 30px;
+	}
+}
+.new-collection__link {
+	@extend %link;
+	width: fit-content;
+	color: inherit;
+	margin-bottom: 100px;
+	padding: 12px 28px;
+	border: 1px solid $white;
+	transition: color $time $time-distribution, border $time $time-distribution;
+	font-size: 18px;
+	line-height: 1.28;
+	&:hover {
+		color: $gray;
+		border-color: $gray;
+	}
+}

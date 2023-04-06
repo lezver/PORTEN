@@ -1,0 +1,13 @@
+// ................HERO..............
+@include breakpoint(mob) {
+	.hero {
+		padding: 125px 0 100px;
+	}
+	.hero__item:first-child {
+		width: 300px;
+		height: 300px;
+	}
+	.hero__text-info {
+		margin: 0 15px;
+	}
+}

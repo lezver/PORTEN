@@ -1,0 +1,21 @@
+// .................SECOND.................
+@include breakpoint(tab) {
+	.second {
+		flex-direction: column-reverse;
+	}
+}
+//...................SEASON.................
+@include breakpoint(tab) {
+	.season {
+		padding: 65px 0;
+	}
+	.season__items {
+		gap: 20px;
+	}
+}
+//...................NEW-COLLECTION...........
+@include breakpoint(tab) {
+	.new-collection {
+		padding: 300px 0 75px;
+	}
+}

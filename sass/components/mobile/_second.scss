@@ -1,0 +1,27 @@
+// .................SECOND.................
+@include breakpoint(mob) {
+	.second {
+		flex-direction: column;
+	}
+}
+//...................SEASON.................
+@include breakpoint(mob) {
+	.season {
+		padding: 65px 0;
+	}
+	.season__items {
+		flex-direction: column;
+	}
+	.season__item {
+		margin: 0 auto;
+	}
+}
+//...................NEW-COLLECTION...........
+@include breakpoint(mob) {
+	.new-collection {
+		padding: 300px 0 75px;
+	}
+	.new-collection__titel {
+		font-size: 32px;
+	}
+}

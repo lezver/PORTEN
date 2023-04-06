@@ -1,0 +1,162 @@
+// ...................DESKTOP.................
+.header {
+	background-color: $black;
+}
+// ...................CONTACTS................
+.contacts {
+	@extend %list-style;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $gray;
+	font-size: 12px;
+	line-height: 1.29;
+	padding: 14px 0;
+}
+.contacts__item:first-child {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+.contacts__phone {
+	@extend %link;
+	display: flex;
+	align-items: center;
+	color: inherit;
+	transition: color $time $time-distribution;
+	& svg {
+		width: 16px;
+		height: 16px;
+		margin-right: 15px;
+		fill: $gray;
+		transition: fill $time $time-distribution;
+	}
+	&:hover {
+		color: $white;
+		& svg {
+			fill: $white;
+		}
+	}
+}
+.contacts__info {
+	display: flex;
+	align-items: center;
+	&::before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 10px;
+		margin-right: 11px;
+		background-color: $gray;
+	}
+}
+.contacts__time {
+	display: flex;
+	align-items: center;
+	&::before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 10px;
+		margin-right: 11px;
+		background-color: $gray;
+	}
+}
+.contacts__log-in {
+	display: flex;
+	align-items: center;
+	gap: 19px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: inherit;
+	transition: color $time $time-distribution;
+	& svg {
+		height: 14px;
+		width: 14px;
+		fill: $gray;
+		transition: fill $time $time-distribution;
+	}
+	&:hover {
+		color: $white;
+		& svg {
+			fill: $white;
+		}
+	}
+}
+.wrapper {
+	background-color: $almost-black;
+}
+// ....................NAV...................
+.nav {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+.nav__logo {
+	@extend %link;
+	font-family: "Post No Bills Jaffna", sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	color: inherit;
+	transition: color $time $time-distribution;
+	&:hover {
+		color: $gray;
+	}
+}
+.nav__items {
+	@extend %list-style;
+	margin-left: auto;
+	display: flex;
+}
+.nav__link {
+	@extend %link;
+	display: block;
+	padding: 31px 18px;
+	line-height: 1.29;
+	color: $gray;
+	background-color: transparent;
+	transition: color $time $time-distribution,
+		background $time $time-distribution;
+
+	&:hover {
+		color: $white;
+		background-color: $gray1f;
+	}
+	&.nav__link--active {
+		color: $white;
+		background-color: $gray1f;
+	}
+}
+.nav__box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.nav__link-cart {
+	margin-left: 4px;
+}
+.nav__link-cart,
+.nav__link-search {
+	display: block;
+	padding: 10px;
+	box-shadow: none;
+	border-radius: 15px;
+	transition: box-shadow $time $time-distribution;
+	& svg {
+		height: 22px;
+		width: 22px;
+		fill: $white;
+		transition: fill $time $time-distribution;
+	}
+	&:hover {
+		box-shadow: inset 0px -4px 5px 0px $gray;
+		& svg {
+			fill: $gray;
+		}
+	}
+}
+.nav__btn {
+	display: none;
+}

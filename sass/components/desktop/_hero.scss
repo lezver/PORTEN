@@ -1,0 +1,60 @@
+// ....................HERO..................
+.hero {
+	background-color: $almost-black;
+	background: linear-gradient(
+			rgba(15, 15, 15, 0.5019607843),
+			rgba(15, 15, 15, 0.5019607843)
+		),
+		url("../images/hero/hero.jpg") no-repeat center/cover;
+	@include min-device-pixel() {
+		background: linear-gradient(
+				rgba(15, 15, 15, 0.5019607843),
+				rgba(15, 15, 15, 0.5019607843)
+			),
+			url("../images/hero/hero@2x.jpg") no-repeat center/cover;
+	}
+	padding: 160px 0;
+}
+.hero__items {
+	@extend %list-style;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+}
+.hero__item:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 320px;
+	height: 320px;
+	border: 4px solid $white;
+	margin-bottom: 80px;
+}
+.hero__titel {
+	position: relative;
+	font-family: "Post No Bills Jaffna", sans-serif;
+	font-weight: 700;
+	font-size: 64px;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background-color: $white;
+	}
+}
+.hero__city {
+	font-size: 22px;
+	line-height: 1.29;
+}
+.hero__item:last-child {
+	max-width: 730px;
+	font-size: 16px;
+}

@@ -1,0 +1,9 @@
+// ..............THIRD..................
+@include breakpoint(mob) {
+	.third {
+		flex-direction: column-reverse;
+	}
+	.old-collection__text {
+		margin-bottom: 40px;
+	}
+}

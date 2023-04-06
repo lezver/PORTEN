@@ -1,0 +1,15 @@
+// ...............NEW-ARRIVALS............
+@include breakpoint(mob) {
+	.new-arrivals {
+		padding: 55px 0;
+	}
+	.new-arrivals__title {
+		font-size: 32px;
+		&:after {
+			margin: 30px auto 40px;
+		}
+	}
+	.new-arrivals__items {
+		grid-template-columns: 1fr 1fr;
+	}
+}

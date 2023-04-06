@@ -1,0 +1,62 @@
+// ..............THIRD..................
+.third {
+	background-color: $black;
+	display: flex;
+	@include breakpoint(des) {
+		align-items: center;
+	}
+
+	& img {
+		flex-basis: 49%;
+	}
+}
+// ...............OLD-COLLECTION............
+.old-collection {
+	flex-basis: 51%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-grow: 1;
+	@include breakpoint(des) {
+		padding: 50px 0;
+		min-width: 500px;
+	}
+}
+.old-collection__title {
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 1.33;
+	font-family: "Playfair Display", serif;
+	&:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background-color: $white;
+		margin: 30px auto 40px;
+	}
+}
+.old-collection__text {
+	padding: 0 160px;
+	margin-bottom: 65px;
+	@include breakpoint(des) {
+		padding: 0 25px;
+	}
+}
+.old-collection__link {
+	@extend %link;
+	width: fit-content;
+	border: 1px solid $white;
+	padding: 12px 28px;
+	font-size: 18px;
+	line-height: 1.29;
+	text-transform: uppercase;
+	color: inherit;
+	transition: color $time $time-distribution, border $time $time-distribution;
+	&:hover {
+		color: $gray;
+		border-color: $gray;
+	}
+}

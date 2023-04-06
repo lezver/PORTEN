@@ -1,0 +1,92 @@
+// ...............NEW-ARRIVALS............
+.new-arrivals {
+	background-color: $black;
+	padding: 120px 0;
+}
+.new-arrivals__title {
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.33;
+	&:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background-color: $white;
+		margin: 30px auto 80px;
+	}
+}
+.new-arrivals__items {
+	@extend %list-style;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 40px 24px;
+	font-family: "Playfair Display", serif;
+}
+.new-arrivals__link {
+	@extend %link;
+	color: inherit;
+
+	& > picture {
+		display: block;
+		margin-bottom: 25px;
+		transform: scale(1);
+		transition: transform $time $time-distribution;
+	}
+	& > p {
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 1.33;
+		transition: color $time $time-distribution;
+	}
+	& > span {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.33;
+		transition: color $time $time-distribution;
+	}
+	&:hover {
+		& > picture {
+			transform: scale(1.05);
+		}
+		& > p {
+			color: $gray;
+		}
+		& > span {
+			color: $gray;
+		}
+	}
+}
+.new-arrivals__link-show-all {
+	font-family: "Playfair Display", serif;
+	position: relative;
+	& > p {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+
+		text-transform: uppercase;
+		padding: 12px 28px;
+		color: $white;
+		border: 1px solid $white;
+		font-size: 18px;
+		line-height: 1.33;
+		white-space: nowrap;
+		transition: color $time $time-distribution, border $time $time-distribution;
+
+		@include breakpoint(ldes) {
+			padding: 8px 15px;
+		}
+		font-size: 16px;
+	}
+	&:hover {
+		& > p {
+			color: $gray;
+			border-color: $gray;
+		}
+	}
+}

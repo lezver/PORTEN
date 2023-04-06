@@ -1,0 +1,16 @@
+// ...............NEW-ARRIVALS............
+@include breakpoint(tab) {
+	.new-arrivals {
+		padding: 75px 0;
+	}
+	.new-arrivals__items {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.new-arrivals__link-show-all {
+		& > p {
+			top: 80%;
+			font-size: 14px;
+			padding: 5px;
+		}
+	}
+}

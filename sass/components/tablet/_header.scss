@@ -1,0 +1,67 @@
+//  TABLET
+// .....................HEADER...............
+// ....................CONTACTS..............
+
+@include breakpoint(tab) {
+	.contacts__item:first-child {
+		flex-direction: column;
+		align-items: start;
+		gap: 5px;
+	}
+}
+// .....................NAV..................
+@include breakpoint(tab) {
+	.nav {
+		justify-content: space-between;
+		position: relative;
+	}
+	.nav__logo {
+		z-index: 9;
+	}
+	.nav__items {
+		position: absolute;
+		left: -15px;
+		bottom: 0%;
+		transform: translateY(0%);
+		transition: opacity $time $time-distribution,
+			transform $time $time-distribution;
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		width: 100vw;
+		background-color: $almost-black;
+
+		display: flex;
+		justify-content: center;
+
+		z-index: -10;
+		&.toggle-menu {
+			transform: translateY(99%);
+			opacity: 1;
+			pointer-events: auto;
+			visibility: visible;
+			z-index: 1;
+		}
+	}
+	.nav__link {
+		padding: 15px;
+	}
+	.nav__btn {
+		display: block;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		order: 2;
+		z-index: 9;
+
+		svg {
+			width: 44px;
+			height: 44px;
+			fill: $white;
+		}
+	}
+	.nav__box {
+		z-index: 9;
+		order: 3;
+	}
+}

@@ -1,0 +1,12 @@
+// ..............THIRD..................
+.third {
+	@include breakpoint(tab) {
+		flex-direction: column;
+	}
+}
+// ...............OLD-COLLECTION............
+@include breakpoint(tab) {
+	.old-collection {
+		min-width: 100%;
+	}
+}
