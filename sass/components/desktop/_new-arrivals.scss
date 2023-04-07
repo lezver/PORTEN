@@ -4,19 +4,7 @@
 	padding: 120px 0;
 }
 .new-arrivals__title {
-	font-family: "Playfair Display", serif;
-	font-size: 36px;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 1.33;
-	&:after {
-		content: "";
-		display: block;
-		width: 120px;
-		height: 1px;
-		background-color: $white;
-		margin: 30px auto 80px;
-	}
+	@extend %h2;
 }
 .new-arrivals__items {
 	@extend %list-style;

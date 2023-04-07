@@ -1,0 +1,14 @@
+// ..................FOOTER.................
+@include breakpoint(tab) {
+	.footer__items {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__categories {
+		width: 69%;
+	}
+	.footer__subscripton {
+		width: 250px;
+		margin: 0 auto;
+	}
+}

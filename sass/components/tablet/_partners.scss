@@ -1,0 +1,15 @@
+// ...........................PARTNERS..............
+@include breakpoint(tab) {
+	.partners {
+		padding: 70px 0;
+	}
+	.partners__title {
+		&:after {
+			margin-bottom: 50px;
+		}
+	}
+	.partners__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}

@@ -1,0 +1,9 @@
+// ...................PARTNERS.....................
+@include breakpoint(mob) {
+	.partners__title {
+		font-size: 32px;
+	}
+	.partners__items {
+		padding: 0 45px;
+	}
+}

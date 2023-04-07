@@ -1,0 +1,15 @@
+// ................ARTICLES.................
+@include breakpoint(mob) {
+	.articles__title {
+		font-size: 32px;
+	}
+	.articles__item {
+		padding-bottom: 20px;
+	}
+	.articles__info {
+		padding: 0 15px;
+	}
+	.articles__box {
+		gap: 10px;
+	}
+}

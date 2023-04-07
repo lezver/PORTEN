@@ -25,3 +25,20 @@
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+%h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.33;
+	font-size: 36px;
+	text-transform: uppercase;
+	&:after {
+		content: "";
+		display: block;
+		width: 120px;
+		height: 1px;
+		background-color: $white;
+		margin: 40px auto 50px;
+	}
+}

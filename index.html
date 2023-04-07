@@ -22,6 +22,10 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/slick-slider@1.8.2/slick/slick.min.css"
+		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
@@ -148,6 +152,7 @@
 					<a href="" class="old-collection__link">переглянути колекцію</a>
 				</div>
 			</section>
+			<!-- NEW-ARRIVAlS -->
 			<section class="new-arrivals">
 				<div class="container">
 					<h2 class="new-arrivals__title">Нові надходження</h2>
@@ -168,20 +173,104 @@
 					</ul>
 				</div>
 			</section>
+			<!-- ARTICLES -->
+			<section class="articles">
+				<h2 class="articles__title">Статті та корисна інформація</h2>
+				<ul class="articles__items"></ul>
+			</section>
+			<!-- PARTNERS -->
+			<section class="partners">
+				<h2 class="partners__title">Наші партнери</h2>
+				<ul class="partners__items">
+					<li class="partners__item">
+						<img src="./images/partners/coco.png" alt="coco" />
+					</li>
+					<li class="partners__item">
+						<img src="./images/partners/rolex.png" alt="rolex" />
+					</li>
+					<li class="partners__item">
+						<img src="./images/partners/breguet.png" alt="breguet" />
+					</li>
+					<li class="partners__item">
+						<img src="./images/partners/haven.png" alt="haven" />
+					</li>
+				</ul>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__info">
+				<div class="container">
+					<ul class="footer__items">
+						<li class="footer__item">
+							<h2 class="footer__title">про компанію</h2>
+							<p class="footer__about">
+								Компанія PORTEN – лідер на українському ринку годинників. На цей
+								час ми об'єднуємо більше сорока магазинів у різних куточках
+								України та інтернет-магазин, який став першим в нашому сегменті
+								ринку. Торгова мережа PORTEN – офіційний дистриб'ютор більше 50
+								найвідоміших годинникових марок, починаючи від японської CASIO,
+								закінчуючи швейцарськими LONGINES, ZENITH, TAG HEUER. Однак
+								компанія не обмежується лише годинниками – в інтернет-магазині
+								та бутіках мережі ви знайдете прекрасні ювелірні вироби від
+								таких іменитих брендів, як SWAROVSKI и CHRISTINA.
+							</p>
+						</li>
+						<li class="footer__item">
+							<h2 class="footer__title">Категорії</h2>
+							<ul class="footer__categories">
+								<li class="footer__categories-list">
+									<a href="">годинники</a>
+								</li>
+								<li class="footer__categories-list">
+									<a href="">запонки</a>
+								</li>
+								<li class="footer__categories-list">
+									<a href="">ремені</a>
+								</li>
+								<li class="footer__categories-list">
+									<a href="">ювелірні вироби</a>
+								</li>
+								<li class="footer__categories-list">
+									<a href="">на замовлення</a>
+								</li>
+								<li class="footer__categories-list">
+									<a href="">браслети</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer__item">
+							<h2 class="footer__title">розсилка</h2>
+							<p class="footer__malling-list">
+								Компанія пропонує тільки оригінальну продукцію від найвідоміших
+								світових брендів за найкращою ціною. Ми дбаємо про комфорт наших
+								покупців і постійно розширюємо можливості сервісного
+								обслуговування.
+							</p>
+							<form class="footer__subscripton">
+								<label>
+									<input
+										type="email"
+										name="email"
+										required
+										placeholder="Ваша пошта"
+									/>
+								</label>
+								<button type="submit">ПІДПИСАТИСЯ</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<p>&#169; 2022 PORTEN, Інтернет-магазин годинників</p>
+				<a href="" class="footer__agreement">Угода користувача</a>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-slider@1.8.2/slick/slick.min.js"></script>
 		<script defer src="./js/menu-btn.js" type="module"></script>
 		<script defer src="./js/createli.js" type="module"></script>
+		<script defer src="./js/slider.js" type="module"></script>
+		<script defer src="./js/form.js" type="module"></script>
 	</body>
 </html>
-
-<!-- <li class="new-arrivals__item">
-	<a href="" class="new-arrivals__link">
-		<picture>
-			<source srcset="" />
-			<img srcset="" src="" alt="Наручний годинник" />
-		</picture>
-		<p></p>
-		<span></span>
-	</a>
-</li> -->

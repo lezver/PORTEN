@@ -1,0 +1,19 @@
+// ...................PARTNERS...................
+.partners {
+	background-color: $almost-black;
+	padding: 90px 0;
+}
+.partners__title {
+	@extend %h2;
+	&:after {
+		margin-bottom: 70px;
+	}
+}
+.partners__items {
+	@extend %list-style;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	padding: 0 100px;
+}

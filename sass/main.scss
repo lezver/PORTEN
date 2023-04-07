@@ -2,6 +2,7 @@
 @import "./utils/_placeholders";
 @import "./utils/_mixins";
 @import "./base/_base";
+@import "./utils/thame-slick";
 @import "./components/desktop/_header";
 @import "./components/tablet/_header";
 @import "./components/mobile/_header";
@@ -17,3 +18,11 @@
 @import "./components/desktop/_new-arrivals";
 @import "./components/tablet/_new-arrivals";
 @import "./components/mobile/_new-arrivals";
+@import "./components/desktop/_articles";
+@import "./components/mobile/_articles";
+@import "./components/desktop/_partners";
+@import "./components/tablet/_partners";
+@import "./components/mobile/_partners";
+@import "./components/desktop/_footer";
+@import "./components/tablet/_footer";
+@import "./components/mobile/_footer";

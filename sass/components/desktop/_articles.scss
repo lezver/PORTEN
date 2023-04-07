@@ -1,0 +1,68 @@
+// .......................ARTICLES...............
+.articles {
+	padding-top: 63px;
+	padding-bottom: 10px;
+	background-color: $almost-black;
+}
+.articles__title {
+	@extend %h2;
+}
+.articles__items {
+	@extend %list-style;
+}
+.articles__item {
+	display: flex;
+	align-items: center;
+	> picture {
+		flex-basis: 51%;
+		> img {
+			margin: 0 auto;
+		}
+	}
+	@include breakpoint(ldes) {
+		flex-direction: column;
+
+		> picture {
+			margin-bottom: 25px;
+		}
+	}
+}
+.articles__info {
+	flex-basis: 49%;
+	padding: 53px 150px 0;
+	> h3 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.29;
+		margin-bottom: 14px;
+	}
+	> p {
+		margin-bottom: 39px;
+	}
+	@include breakpoint(des) {
+		padding: 0 50px;
+	}
+}
+.articles__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	line-height: 1.29;
+	text-transform: uppercase;
+	font-size: 18px;
+	> a {
+		@extend %link;
+		color: inherit;
+		padding: 12px 28px;
+		border: 1px solid $white;
+		transition: color $time $time-distribution, border $time $time-distribution;
+		&:hover {
+			color: $gray;
+			border-color: $gray;
+		}
+	}
+	> span {
+		text-align: end;
+	}
+}

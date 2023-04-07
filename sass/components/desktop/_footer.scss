@@ -1,0 +1,118 @@
+// ...................FOOTER...................
+.footer {
+	background-color: $almost-black;
+	> .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 12px;
+		color: $light-gray;
+		line-height: 1.29;
+
+		padding: 17px 15px;
+		@include breakpoint(ldes) {
+			justify-content: space-around;
+		}
+	}
+}
+.footer__agreement {
+	color: inherit;
+	transition: color $time $time-distribution;
+	&:hover {
+		color: $gray;
+	}
+}
+.footer__info {
+	background-color: $almost-black;
+	background: linear-gradient(rgba(15, 15, 15, 0.849), rgba(15, 15, 15, 0.849)),
+		url("../images/footer/bg-footer.jpg") no-repeat center/cover;
+	@include min-device-pixel() {
+		background: linear-gradient(
+				rgba(15, 15, 15, 0.849),
+				rgba(15, 15, 15, 0.849)
+			),
+			url("../images/footer/bg-footer@2x.jpg") no-repeat center/cover;
+	}
+	padding: 80px 0;
+	@include breakpoint(ldes) {
+		padding: 50px 0;
+	}
+}
+.footer__items {
+	@extend %list-style;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+}
+.footer__title {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.33;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.footer__malling-list {
+	margin-bottom: 26px;
+}
+.footer__subscripton {
+	display: flex;
+	> label {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		> input {
+			margin: 0;
+			padding: 10px 15px;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.4);
+			border: none;
+			outline: none;
+			color: $white;
+			&::placeholder {
+				color: rgb(150, 150, 150);
+			}
+		}
+	}
+	> button {
+		text-transform: uppercase;
+		padding: 10px 20px;
+		background-color: rgba(15, 15, 15, 1);
+		color: inherit;
+		outline: none;
+		border: none;
+		transition: background $time $time-distribution,
+			color $time $time-distribution, transform $time $time-distribution;
+		&:hover {
+			background-color: $gray;
+			color: $almost-black;
+		}
+		&:active {
+			transform: translateY(2%);
+		}
+	}
+	@include breakpoint(ldes) {
+		flex-direction: column;
+	}
+}
+.footer__categories {
+	@extend %list-style;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 20px;
+}
+.footer__categories-list {
+	> a {
+		@extend %link;
+		display: block;
+		color: inherit;
+		text-transform: lowercase;
+		padding: 10px 20px;
+		background-color: rgba(15, 15, 15, 1);
+		transition: color $time $time-distribution;
+		&:hover {
+			color: $gray;
+		}
+	}
+}
