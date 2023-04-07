@@ -9,6 +9,7 @@ const seasonLi = sesonsSection.reduce(
 				<picture>
 					<source srcset="${srcsetWepb}" />
 					<img
+						loading="lazy"
 						srcset="${srcsetJpg}"
 						src="${srcJpg}"
 						alt="Наручний годинник"
@@ -35,6 +36,7 @@ const newArrivalsLi = newArrivals.reduce(
 				<picture>
 					<source srcset="${srcsetWepb}" />
 					<img
+						loading="lazy"
 						srcset="${srcsetJpg}"
 						src="${srcJpg}"
 						alt="Наручний годинник"
@@ -60,6 +62,7 @@ const articelsBlockLi = articelsBlock.reduce(
 				<picture>
 					<source srcset="${srcsetWepb}" />
 					<img
+						loading="lazy"
 						srcset="${srcsetJpg}"
 						src="${srcJpg}"
 						alt="${alt}" 
