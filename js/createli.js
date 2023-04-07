@@ -62,7 +62,6 @@ const articelsBlockLi = articelsBlock.reduce(
 				<picture>
 					<source srcset="${srcsetWepb}" />
 					<img
-						loading="lazy"
 						srcset="${srcsetJpg}"
 						src="${srcJpg}"
 						alt="${alt}" 
