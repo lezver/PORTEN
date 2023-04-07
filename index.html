@@ -80,7 +80,7 @@
 								</svg>
 							</a>
 						</div>
-						<button class="nav__btn" type="menu">
+						<button class="nav__btn" type="button">
 							<svg>
 								<use href="./images/icons.svg#icon-menu"></use>
 							</svg>
@@ -160,9 +160,17 @@
 						<li class="new-arrivals__item">
 							<a href="" class="new-arrivals__link-show-all">
 								<picture>
-									<source srcset="" />
+									<source
+										srcset="
+											./images/watch/jpg/watch8.webp    1x,
+											./images/watch/jpg/watch8@2x.webp 2x
+										"
+									/>
 									<img
-										srcset=""
+										srcset="
+											./images/watch/jpg/watch8.jpg    1x,
+											./images/watch/jpg/watch8@2x.jpg 2x
+										"
 										src="./images/watch/jpg/watch8.jpg"
 										alt="Наручний годинник"
 									/>
@@ -197,6 +205,7 @@
 				</ul>
 			</section>
 		</main>
+		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="footer__info">
 				<div class="container">
@@ -268,9 +277,9 @@
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/slick-slider@1.8.2/slick/slick.min.js"></script>
-		<script defer src="./js/menu-btn.js" type="module"></script>
-		<script defer src="./js/createli.js" type="module"></script>
-		<script defer src="./js/slider.js" type="module"></script>
-		<script defer src="./js/form.js" type="module"></script>
+		<script src="./js/menu-btn.js" type="module"></script>
+		<script src="./js/createli.js" type="module"></script>
+		<script src="./js/slider.js" type="module"></script>
+		<script src="./js/form.js" type="module"></script>
 	</body>
 </html>
