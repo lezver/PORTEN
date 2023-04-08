@@ -1,11 +1,7 @@
 const menuBtnRef = document.querySelector(".nav__btn");
 const menuRef = document.querySelector(".nav__items");
-// const burgerBtnRef = document.querySelector(".burger");
-// const crossBtnRef = document.querySelector(".cross");
 
 const [burger, cross] = menuBtnRef.children;
-
-// console.log(burger);
 
 const toggleMenu = () => {
 	menuRef.classList.toggle("toggle-menu");
